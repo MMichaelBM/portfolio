@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    
     <title>Michael Robson - Portfólio . </title>
 </head>
 <body>
@@ -26,13 +28,46 @@
             </nav>
 
             <div class="btn-ctt">
-                <a href="#">
-                    <button>Contato</button>
-                </a>
+                <a href="contato.html">Contato</a>
             </div>
 
+            
         </div><!--FECHA A INTERERFACE-->
-    </header>
+
+    </header>    
+    
+    <div class="formulario">
+    <form action="https://formspree.io/michaelrobs@gmail.com" method="POST">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" required><br><br>
+    
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email" required><br><br>
+    
+    <label for="mensagem">Mensagem:</label><br>
+    <textarea id="mensagem" name="mensagem" rows="4" cols="50" required></textarea><br><br>
+    
+    <input type="submit" value="Enviar">
+    </form>
+    </div>
+    <section class="redes">
+    <div class="redesbox">                                    
+        <a href="https://www.instagram.com/chaelrobson/"> <i class="bi bi-instagram"></i>
+   </a></p>
+
+    </div>
+    <div class="redesbox">
+         <a href="https://www.facebook.com/chaelrobson/"><i class="bi bi-facebook"></i>
+  
+    </div>
+    <div class="redesbox">
+        
+         <a href="https://www.linkedin.com/in/michael-robson-12a73631/"><i class="bi bi-linkedin"></i></a>                              
+                              
+    </div>
+</div>
+</section>
+    
     <footer>Michael Robson - <b>minha.página.</b> ©</footer>
 </body>
 </html>
