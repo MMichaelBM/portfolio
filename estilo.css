@@ -12,6 +12,17 @@ body {
     margin: 0 auto;
     margin-top: 22px;
 }
+.flex {
+    display: flex;
+}
+.imglogo {
+    margin-left: 40px;
+}
+.imglogo:hover {
+        transform: scale(1.3);
+        transition: 2s
+        
+}
 /* estilo */
 
 header > .interface {
@@ -33,8 +44,8 @@ header a:hover {
 }
 header nav ul {
     list-style-type: none;
-    font-family: Arial, Helvetica, sans-serif;
-    
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: larger;
 }
 header nav ul li {
     display: inline-block;
@@ -45,7 +56,7 @@ header .btn-ctt button {
     padding: 10px 50px;
     font-size: 20px;
     font-weight: 700;
-    background-color: rgb(165, 163, 161);
+    background-color: none;
     border-radius: 30px;
     border: 0;
     cursor: pointer;
@@ -57,7 +68,95 @@ header .btn-ctt button {
 }
 
 header .btn-ctt button:hover {
-    box-shadow: 0px 0px 8px rgb(27, 27, 27)
+    box-shadow: none;
+    transition: 1s;
 
 }
+/* ESTILO DO TOPO */
 
+section.topodosite {
+    padding: 20px 4%;
+}
+section.topodosite .flex {
+    align-items: center;
+    justify-content: center;
+}
+.topodosite h1 {
+    color: brown;
+
+}
+.topodosite span {
+    color: darkgreen;
+}
+.topodosite .imgtopo img{
+    position: relative;
+    animation: flutua 2s ease-in-out infinite alternate;
+
+ 
+}
+@keyframes flutua {
+    0% {
+        top: 2%;
+    }
+    100% {
+        top:20px
+    }
+}
+/* estilos das redes */
+section.redes{
+    padding: 40px 4%;
+    display: flex;
+    align-items: center;
+    color: rgb(124, 124, 124);
+    text-align: center;
+    height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    }
+
+.redes .redesbox {
+    padding: 30px;
+    text-align: center;
+    align-items: center;
+}
+.redes .redesbox i {
+    font-size: 60px;
+    color: rgb(102, 97, 97);
+    align-items: center;
+    text-align: center;
+}
+.redes .redesbox a {
+    font-size: 25px;
+    padding: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: ;
+    align-items: center;
+    text-align: center;
+}
+
+.redes .redesbox i:hover {
+    filter: grayscale(0.5) blur(2px);
+    align-items: center;
+    text-align: center;
+    
+}
+.story {
+    text-align: center;
+    font-family: 'fixedsys' monospace;
+    color: rgb(0, 0, 0);
+    margin: 50px;
+    margin-top: auto;
+}
+@font-face {
+    font-family: 'Fixedsys';
+    src: url('font/fixedsys.ttf') format('truetype') }
+
+footer {
+        position: fixed; /* Fixando o rodapé na parte inferior da página */
+        bottom: 0;
+        width: 100%;
+        color: #0a0101;
+        text-align: center;
+        padding: 15px 0; }
