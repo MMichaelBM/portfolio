@@ -111,10 +111,10 @@ section.redes{
     color: rgb(124, 124, 124);
     text-align: center;
     height: 100%;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     }
 
 .redes .redesbox {
@@ -192,3 +192,32 @@ footer {
 .formulario textarea{
     background-color:  rgb(196, 196, 184);
 }
+/* Estilos CSS para a Seção de Trabalhos */
+#trabalhos {
+    text-align: center;
+    padding: 50px 0;
+    margin: 30px;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .grid-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .grid-item h3 {
+    margin-top: 10px;
+  }
+  .grid-item img:hover {
+    transform: scale(1.1);
+    transition: 2s;
+    
+  }
+  
